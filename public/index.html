@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <style type="text/css" > 
+      /* * {
+        box-sizing: initial !important;
+      } */
+      #navBar {
+        color: black;
+      }
+      main {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+      }
+      aside {
+        position: static !important;
+      }
+      #chat_container {
+        /* padding-top:  0px !important; */
+        position: static !important;
+      }
+      #left h5 {
+        font-weight: normal;
+      }
+    </style>   
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <title>FEC Demo</title>
+  </head>
+  <body>
+    <!-- <main> -->
+      <div id="left">
+        <div id="navBar"></div>
+        <div id="videoPlayer"></div>
+      <!-- </div>
+      <aside> -->
+        <div id="chat-container"></div>
+      <!-- </aside>
+    </main> -->
+    
+  
+    <!-- <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script> -->
+    <script src="http://localhost:8001/bundle.js"></script>
+    <script src="http://localhost:3000/bundle.js"></script>
+    <script src="http://localhost:8000/main.js"></script>
+    
+  </body>
+</html>
