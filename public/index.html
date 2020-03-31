@@ -3,26 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <style type="text/css" > 
-      /* * {
-        box-sizing: initial !important;
-      } */
-      #navBar {
-        color: black;
+      #navBar h5 {
+        font-weight: normal;
+      } 
+      .column {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
       }
-      main {
+      .row {
         display: flex;
         flex-direction: row;
         background-color: white;
       }
-      aside {
-        position: static !important;
+      #app-div {
+        width: calc(100% - 424px);
       }
-      #chat_container {
-        /* padding-top:  0px !important; */
-        position: static !important;
-      }
-      #left h5 {
-        font-weight: normal;
+      #chat-container {
+        position: relative !important;
       }
     </style>   
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700&display=swap" rel="stylesheet">
@@ -30,22 +28,17 @@
     <title>FEC Demo</title>
   </head>
   <body>
-    <!-- <main> -->
-      <div id="left">
-        <div id="navBar"></div>
-        <div id="videoPlayer"></div>
-      <!-- </div>
-      <aside> -->
+    <div class="col">
+      <div id="navBar"></div>
+      <div class="row">
+        <div id="app-div">
+          <div id="App"></div>
+        </div>
         <div id="chat-container"></div>
-      <!-- </aside>
-    </main> -->
-    
-  
-    <!-- <script src="/lib/react.development.js"></script>
-    <script src="/lib/react-dom.development.js"></script> -->
-    <script src="http://localhost:8001/bundle.js"></script>
-    <script src="http://localhost:3000/bundle.js"></script>
-    <script src="http://localhost:8000/main.js"></script>
-    
+      </div>
+    </div>        
+    <script src="http://54.176.192.211/bundle.js"></script>
+    <script src="http://18.144.87.148/bundle.js"></script>
+    <script src="http://54.193.203.179/main.js"></script>
   </body>
 </html>
